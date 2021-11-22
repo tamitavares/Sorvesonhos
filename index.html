@@ -61,7 +61,7 @@
             <li data-dropdown><button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
                 <ul class="dropdown-menu">
                     <li>
-                        <p>Temos opções <b>tradicionais</b> que são: Morango, Chocolate e Creme. E opções ...</p>
+                        <p>Temos opções <b>tradicionais</b> que são: Morango, Chocolate e Creme. E opções <b>especiais</b> que são: Frutas Vermelhas e Bombom.</p>
                     </li>
                 </ul>
             </li>
@@ -77,7 +77,7 @@
             <li data-dropdown><button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
                 <ul class="dropdown-menu">
                     <li>
-                        <p>Temos opções <b>tradicionais</b> que são: Morango, Chocolate e Creme. E opções ...</p>
+                        <p>Temos opções <b>tradicionais</b> que são: Morango, Limão e Maracujá. E opções <b>especiais</b> que são: Uva Suíça e Bombom Recheado.</p>
                     </li>
                 </ul>
             </li>
@@ -92,7 +92,7 @@
             <li data-dropdown><button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
                 <ul class="dropdown-menu">
                     <li>
-                        <p>Temos opções <b>tradicionais</b> que são: Morango, Chocolate e Creme. E opções ...</p>
+                        <p>Temos opções <b>tradicionais</b> que são: Mirtilo, Maracujá e Amora. E opções <b>especiais</b> que são: Napolitano e Frutas Vermelhas em Pedaços.</p>
                     </li>
                 </ul>
             </li>
@@ -151,125 +151,149 @@
 
         <div>
             <img src="images/sorvete2.jpeg" alt="Sorvete 2">
-            <div data-dropdown>
-                <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+            <ul>
+                <li data-dropdown>
+                    <a class="carrinho"><img src="images/carrinho-carrinho.png" alt="Carrinho"></a>
+                    <ul class="dropdown-menu">
+                    <li><label for = "subscribeNews"> Selecione caso demonstre interesse!</label></li>
+                    <li><input type="checkbox" id="opt-4" name="OptSorvete" value="Morango" onclick="soma()">
+                        <label for = "subscribeNews"> Morango - R$5,00 </label>
+                    </li><br>
+                    <li><input type="checkbox" id="opt-5" name="OptSorvete" value="Limão" onclick="soma()">
+                        <label for = "subscribeNews"> Limão - R$5,00 </label>
+                    </li><br>
+                    <li><input type="checkbox" id="opt-6" name="OptSorvete" value="Maracujá" onclick="soma()">
+                        <label for = "subscribeNews"> Maracujá - R$5,00 </label>
+                    </li>
+                    </ul>
+                </li>
+                <li data-dropdown>
+                    <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <h4>Picolé Tradicional</h4>
-                            <p>Opções: Morango, Chocolate, Creme, Abacaxi e Milho.</p>
+                           <h4>Picolé Tradicional</h4>
+                           <p>Opções: Morango, Limão e Maracujá.</p>
                         </li>
                     </ul>
-            </div>
+                </li>
+            </ul>
         </div>
         
         <div>
             <img src="images/sorvete3.jpeg" alt="Sorvete 3">
-            <div data-dropdown>
-                <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+            <ul>
+                <li data-dropdown>
+                    <a class="carrinho"><img src="images/carrinho-carrinho.png" alt="Carrinho"></a>
+                    <ul class="dropdown-menu">
+                    <li><label for = "subscribeNews"> Selecione caso demonstre interesse!</label></li>
+                    <li><input type="checkbox" id="opt-7" name="OptSorvete" value="Mirtilo" onclick="soma()">
+                        <label for = "subscribeNews"> Mirtilo - R$24,50 </label>
+                    </li><br>
+                    <li><input type="checkbox" id="opt-8" name="OptSorvete" value="Maracujá" onclick="soma()">
+                        <label for = "subscribeNews"> Maracujá - R$24,50 </label>
+                    </li><br>
+                    <li><input type="checkbox" id="opt-9" name="OptSorvete" value="Amora" onclick="soma()">
+                        <label for = "subscribeNews"> Amora - R$24,50 </label>
+                    </li>
+                    </ul>
+                </li>
+                <li data-dropdown>
+                    <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <h4>Picolé Tradicional</h4>
-                            <p>Opções: Morango, Chocolate, Creme, Abacaxi e Milho.</p>
+                           <h4>Zero Lactose Tradicional</h4>
+                           <p>Opções: Mirtilo, Maracujá e Amora.</p>
                         </li>
                     </ul>
-            </div>
+                </li>
+            </ul>
         </div>
 
-        <!-- Opções diferentes -->
+        <!-- Opções especiais -->
 
         <div>
             <img src="images/sorvete4.jpeg" alt="Sorvete 4">
-            <div data-dropdown>
-                <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+            <ul>
+                <li data-dropdown>
+                    <a class="carrinho"><img src="images/carrinho-carrinho.png" alt="Carrinho"></a>
+                    <ul class="dropdown-menu">
+                    <li><label for = "subscribeNews"> Selecione caso demonstre interesse!</label></li>
+                    <li><input type="checkbox" id="opt-10" name="OptSorvete" value="Frutas Vermelhas" onclick="soma()">
+                        <label for = "subscribeNews"> Frutas Vermelhas - R$24,50 </label>
+                    </li><br>
+                    <li><input type="checkbox" id="opt-11" name="OptSorvete" value="Bombom" onclick="soma()">
+                        <label for = "subscribeNews"> Bombom - R$24,50 </label>
+                    </li><br>
+                    </ul>
+                </li>
+                <li data-dropdown>
+                    <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <h4>Picolé Tradicional</h4>
-                            <p>Opções: Morango, Chocolate, Creme, Abacaxi e Milho.</p>
+                           <h4>Pote Especial</h4>
+                           <p>Opções: Frutas Vermelhas e Bombom.</p>
                         </li>
                     </ul>
-            </div>
+                </li>
+            </ul>
         </div>
 
         <div>
             <img src="images/sorvete5.jpeg" alt="Sorvete 5">
-            <div data-dropdown>
-                <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+            <ul>
+                <li data-dropdown>
+                    <a class="carrinho"><img src="images/carrinho-carrinho.png" alt="Carrinho"></a>
+                    <ul class="dropdown-menu">
+                    <li><label for = "subscribeNews"> Selecione caso demonstre interesse!</label></li>
+                    <li><input type="checkbox" id="opt-12" name="OptSorvete" value="Uva Suíça" onclick="soma()">
+                        <label for = "subscribeNews"> Uva Suíça - R$7,50 </label>
+                    </li><br>
+                    <li><input type="checkbox" id="opt-13" name="OptSorvete" value="Bombom Recheado" onclick="soma()">
+                        <label for = "subscribeNews"> Bombom Recheado - R$7,50 </label>
+                    </li><br>
+                    </ul>
+                </li>
+                <li data-dropdown>
+                    <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <h4>Picolé Tradicional</h4>
-                            <p>Opções: Morango, Chocolate, Creme, Abacaxi e Milho.</p>
+                           <h4>Picolé Especial</h4>
+                           <p>Opções: Uva Suíça e Bombom Recheado.</p>
                         </li>
                     </ul>
-            </div>
+                </li>
+            </ul>
         </div>
 
         <div>
-            <img src="images/sorvete5.jpeg" alt="Sorvete 5">
-            <div data-dropdown>
-                <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
+            <img src="images/sorvete6.jpeg" alt="Sorvete 6">
+            <ul>
+                <li data-dropdown>
+                    <a class="carrinho"><img src="images/carrinho-carrinho.png" alt="Carrinho"></a>
+                    <ul class="dropdown-menu">
+                    <li><label for = "subscribeNews"> Selecione caso demonstre interesse!</label></li>
+                    <li><input type="checkbox" id="opt-14" name="OptSorvete" value="Napolitano" onclick="soma()">
+                        <label for = "subscribeNews"> Napolitano - R$26,00 </label>
+                    </li><br>
+                    <li><input type="checkbox" id="opt-15" name="OptSorvete" value="Frutas Vermelhas em Pedaços" onclick="soma()">
+                        <label for = "subscribeNews"> Frutas Vermelhas em Pedaços - R$26,00 </label>
+                    </li><br>
+                    </ul>
+                </li>
+                <li data-dropdown>
+                    <a  href="" id="interrogacao" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <h4>Picolé Tradicional</h4>
-                            <p>Opções: Morango, Chocolate, Creme, Abacaxi e Milho.</p>
+                           <h4>Zero Lactose Especial</h4>
+                           <p>Opções: Napolitano e Frutas Vermelhas em Pedaços.</p>
                         </li>
                     </ul>
-            </div>
+                </li>
+            </ul>
         </div>
 
             
     </div>
-
-
-            <!--
-            <div class="sorvetes-info">
-                <ul>-->
-                     <!--<li data-dropdown>
-                       <a class="carrinho"><img src="images/carrinho-carrinho.png" alt="Carrinho"></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <form>
-                                    <div>
-                                      <input type = "checkbox" id = "checkbox" name = "subscribe" value = "newsletter">
-                                      <label for = "subscribeNews"> Morango - R$20,00 </label>
-                                    </div>
-                                    <div>
-                                        <input type = "checkbox" id = "checkbox" name = "subscribe" value = "newsletter">
-                                        <label for = "subscribeNews"> Chocolate - R$20,00 </label>
-                                    </div>
-                                    <div>
-                                        <input type = "checkbox" id = "checkbox" name = "subscribe" value = "newsletter">
-                                        <label for = "subscribeNews"> Creme - R$20,00 </label>
-                                    </div>
-                                    <div>
-                                      <button type = "submit"> Confirmar </button>
-                                    </div>
-                                </form>
-                            </li>
-                        </ul>
-                    </li>-->
-              
-                
-            
-<!--
-        <div>
-            <img src="images/sorvete2.jpeg" alt="Sorvete 2">
-            <div class="sorvetes-info">
-                <ul>
-                    <li><a href="" class="carrinho"><img src="images/carrinho-carrinho.png" alt="Carrinho"></a></li>
-                    <li data-dropdown>
-                        <a href="" class="interrogacao"><img src="images/ponto-de-interrogacao.png" alt="Interrogação"></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <h4>Picolé Tradicional</h4>
-                                <p>Opções: Morango, Chocolate, Creme, Abacaxi e Milho.</p>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>-->
-
 
 <br><br><br>
 
@@ -329,6 +353,8 @@
     <title>Contato</title><rect width="100%" height="100%" fill="#F4C3DA"/>
 </svg>
 <br><br><br>
+
+<!--Opções de pagamento e informações adicionais sobre os itens selecionados-->
 
 <section id="carrinho">
     <div class="titulos">Opções de pagamento</div>
