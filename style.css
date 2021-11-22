@@ -1,0 +1,309 @@
+/* Corpo do html */
+
+body{
+    background: rgba(166, 237, 238, 1);
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    background-image: url(images/derretendo.dvg) no-repeat;
+    background-size: cover;
+}
+
+/* Definir posição centro de todos os elementos do header */
+
+header{
+    color: black;
+    text-align: center;
+}
+
+/* Titúlos */
+
+#titulo{
+    font-family: 'aclonica';
+    text-align: left;
+    color: rgba(243, 70, 152, 1);
+    float: left;
+    font-size: 2em;
+    margin-top:10px;
+}
+
+.titulos{
+    font-family: 'aclonica';
+    text-align: center;
+    color: rgba(243, 70, 152, 1);
+    font-size: 2em;
+}
+
+
+/* Menu */
+
+li{
+    display: inline;
+}
+
+#menu a{
+    color: gray;
+    text-decoration:none;
+    padding:5px;
+    cursor: pointer;
+}
+
+#menu a:hover{
+    color: rgba(243, 70, 152, 1);
+}
+
+#menu img{
+    max-width: 20px;
+}
+
+.carrinho img{
+    margin-top: 3px;
+    max-width: 50px;
+    padding: 5px;
+    background-color: #F34698;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+/* Link whatsapp flutuante no canto esquerdo */
+
+.whatsapp-link{
+    position: fixed;
+    z-index: 200;
+    bottom: 50px;
+    float: right;
+    margin-right: 20px;
+}
+
+.whatsapp-link img{
+    width: 60px;
+    height: 60px;
+    
+}
+
+
+/* Tipos de sorvetes */
+
+.tipos{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tipos img{
+    max-width: 260px;
+    background-color: #F4C3DA;
+    margin: 20px;
+}
+
+.tipos h1{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    font-size: 2.5em;
+    margin-top: 125px;
+    margin-left: 40px;
+    font-family: "Aclonica", sans-serif;
+    color: #FFFFFF;
+}
+
+.tipos h2{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    font-size: 2.1em;
+    margin-top: 165px;
+    margin-left: 40px;
+    font-family: "Aclonica", sans-serif;
+    color: #FFFFFF;
+}
+
+
+.tipos button{
+    margin-left: 20px;
+}
+
+/* Modelos de sorvetes espalhados */
+
+.modelos-sorvetes{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modelos-sorvetes h5{
+    color: #737373;
+    font-size: 1em;
+    padding: 10px 50px;
+    background-color: #F4C3DA;
+    border-radius: 10px;
+}
+
+
+.sorvetes{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+
+.sorvetes img{
+    max-width: 300px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+
+
+
+/* Interrogação para conhecer mais sobre o produto */
+
+.carrinho img{
+    margin-top: 3px;
+    max-width: 50px;
+    padding: 5px;
+    background-color: #F34698;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.interrogacao img{
+    margin-top: 3px;
+    max-width: 50px;
+    padding: 5px;
+    background-color: #16DEE1;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+
+
+/* Dropdown das informações */
+
+[data-dropdown]{
+    position: relative;
+}
+
+[data-dropdown] .dropdown-menu{
+    display: none;
+}
+
+[data-dropdown]:hover .dropdown-menu{
+    display: block;
+}
+
+
+.dropdown-menu{
+    position: absolute;
+    top: 38px;
+    background-color: #F4C3DA;
+    border: 2px solid #333;
+    z-index: 200;
+}
+
+.dropdown-menu li button:hover{
+    color: #FFFFFF;
+}
+
+.dropdown-menu label{
+    font-size: 0.8em;
+}
+
+.dropdown-menu button{
+    background-color: #F34698;
+   border-radius: 5px;
+}
+
+
+/* Aba quem somos */
+
+.quem-somos-itens{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+#quem-somos-text{
+    text-align: center;
+    padding: 35px;
+    background-color:rgba(252, 230, 240, 1);
+    border-radius: 20px;
+}
+
+.quem-somos-text p{
+    font-size: 1.2em;
+}
+
+
+.quem-somos-img img{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+/* Aba contato com informações */
+
+.items-contato{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.items-contato li{
+    font-style: oblique;
+    font-size: 1.2em;
+}
+
+.informacoes{
+    display: inline-block;
+    font-weight: bold;
+}
+
+.informacoes img{
+    max-width: 60px;
+}
+
+/* Opções de pagamento */
+
+.pagamento{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-right: 90px;
+}
+
+.pag-img{
+    max-width: 400px;
+}
+
+.text-area{
+    background-color: rgba(252, 230, 240, 1);
+    border: 1px solid black;
+    padding: 35px;
+    border-radius: 20px;
+    font-size: 1.3em;
+}
+
+footer{
+    text-align: center;
+}
+
+.itens-selecionados{
+    text-align: center;
+}
