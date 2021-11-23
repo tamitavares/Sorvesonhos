@@ -1,5 +1,5 @@
 function alertar(){
-    alert("Vocâ será redirecionado ao WhatsApp da empresa! Faça seu pedido!");
+    alert("Você será redirecionado ao WhatsApp da empresa! Faça seu pedido!");
 }//alertar
 
 function soma(){
